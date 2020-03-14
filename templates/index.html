@@ -1,0 +1,85 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hotel Management</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/mobile.css')}}" media="screen and (max-width : 568px)">
+	<script type="text/javascript" src="js/mobile.js"></script>
+</head>
+<body>
+	<div id="header">
+		<a href="index.html" class="logo">
+			<img src="static/images/123.jpg" height="250" width="250" alt="">
+		</a>
+		<ul id="navigation">
+			<li class="selected">
+				<a href="/">home</a>
+			</li>
+			<li>
+				<a href="/hotel">Hotels</a>
+			</li>
+			<li>
+				<a href="/foods">FOODS</a>
+			</li>			
+			<li>
+				<a href="/traveling">Travel</a>
+			</li>
+			<li>
+				<a href="/beer">beer</a>
+			</li>
+			
+		</ul>
+	</div>
+	<div id="body">
+		<div id="featured">
+			<img src="static/images/234.jpg" alt="">
+			<div>
+				<h2>HOTEL MANAGEMENT</h2> 
+			</div>
+		</div>
+		<ul>
+			<li>
+				<a href="/hotel">
+					<img src="static/images/hotel.jpg"height="300" width="300" alt="">
+					<span>Hotels</span>
+				</a>
+			</li>
+			<li>
+				<a href="/traveling">
+					<img src="static/images/traveling.jfif"height="300" width="300" alt="">
+					<span>traveling</span>
+				</a>
+			</li>
+			<li>
+				<a href="/foods">
+					<img src="static/images/food.jpg" height="300" width="300" alt="">
+					<span>Foods</span>
+				</a>
+			</li>
+		</ul>
+		
+	</div>
+	<div id="footer">
+		<div>			
+			<ul>
+				<li>
+					<a href="http://freewebsitetemplates.com/go/twitter/"><img src="static/images/icons/aaa.jpg"></a>
+					<!-- <a href="http://freewebsitetemplates.com/go/twitter/" id="twitter"></a> -->
+				</li>
+				<li>
+					<a href="http://freewebsitetemplates.com/go/facebook/" id="facebook"><img src="static/1.jpg"></a>
+				</li>
+				<li>
+					<a href="http://freewebsitetemplates.com/go/googleplus/" id="googleplus"><img src="static/images/icons/ggg.jpg"></a>
+				</li>
+				<li>
+					<a href="http://pinterest.com/fwtemplates/" id="pinterest"><img src="static/images/icons/ppp.jpg"></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+</body>
+</html>
+

@@ -1,0 +1,74 @@
+<<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Hotel Management</title>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/mobile.css')}}" media="screen and (max-width : 568px)">
+		<script type="text/javascript" src="js/mobile.js"></script>
+	</head>
+	<body>
+		<div id="header">
+			<a href="index.html" class="logo">
+				<img src="static/images/123.jpg" height="250" width="250" alt="">
+			</a>
+			<ul id="navigation">
+				<li class="selected">
+					<a href="/">home</a>
+				</li>
+				<li>
+					<a href="/hotel">Hotels</a>
+				</li>
+				<li>
+					<a href="/foods">FOODS</a>
+				</li>			
+				<li>
+					<a href="/traveling">Travel</a>
+                </li>
+                <li>
+					<a href="/beer">beer</a>
+				</li>
+				
+			</ul>
+		</div>
+	<div id="body">
+		<h1><span>BEERS</span></h1>
+		<div>
+                <iframe id="ytplayer" type="text/html" width="640" height="360"
+				src="https://www.youtube.com/embed/3_NSrlbu458"
+				frameborder="0"></iframe>	
+				<h3>BEER</h3>
+				<p>
+                    Book your Hotel in Beer online. No reservation costs. Great rates. Choose from a wide range of properties which Booking.com offers. Search now! Read Real Guest Reviews. Hotels. We speak your language. Apartments. 24/7 Customer Service. Motels. Hostels.
+                </p>
+				<h3>{{ random_beer_name }}</h3>
+				<p>
+					{{ random_beer_description }}
+				</p>
+				<p>
+                   
+                </p>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div>			
+			<ul>
+				<li>
+					<a href="http://freewebsitetemplates.com/go/twitter/"><img src="static/images/icons/aaa.jpg"></a>
+					<!-- <a href="http://freewebsitetemplates.com/go/twitter/" id="twitter"></a> -->
+				</li>
+				<li>
+					<a href="http://freewebsitetemplates.com/go/facebook/" id="facebook"><img src="static/1.jpg"></a>
+				</li>
+				<li>
+					<a href="http://freewebsitetemplates.com/go/googleplus/" id="googleplus"><img src="static/images/icons/ggg.jpg"></a>
+				</li>
+				<li>
+					<a href="http://pinterest.com/fwtemplates/" id="pinterest"><img src="static/images/icons/ppp.jpg"></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

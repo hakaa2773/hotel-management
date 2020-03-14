@@ -1,0 +1,163 @@
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+
+
+
+<script type=text/javascript>
+
+  $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+
+</script>
+
+<script type=text/javascript>
+						
+	$(function() {
+  
+	  $('a#calculate').bind('click', function() {
+  
+		$.getJSON($SCRIPT_ROOT + '/search', {
+  
+		  a: $('input[name="a"]').val()
+  
+		}, function(data) {
+  
+		  $("#result").text(data.result);
+  
+		});
+  
+		return false;
+  
+	  });
+  
+	});
+  
+  </script>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Hotel Management</title>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/mobile.css')}}" media="screen and (max-width : 568px)">
+		<script type="text/javascript" src="js/mobile.js"></script>
+		<title>{{ title }} - Microblog</title>
+	</head>
+	<body>
+		<div id="header">
+			<a href="index.html" class="logo">
+				<img src="static/images/123.jpg" height="250" width="250" alt="">
+			</a>
+			<ul id="navigation">
+				<li class="selected">
+					<a href="/">home</a>
+				</li>
+				<li>
+					<a href="/hotel">Hotels</a>
+				</li>
+				<li>
+					<a href="/foods">FOODS</a>
+				</li>			
+				<li>
+					<a href="/traveling">Travel</a>
+				</li>
+				<li>
+					<a href="/beer">beer</a>
+				</li>
+				
+			</ul>
+		</div>
+	<div id="body">
+		<h1><span>FOODS</span></h1>
+		<div>
+				<iframe id="ytplayer" type="text/html" width="640" height="360"
+				src="https://www.youtube.com/embed/0SPwwpruGIA"
+				frameborder="0"></iframe>
+				<h3>The BBQ</h3>
+				<p>
+                    At just Rs. 2499 per head, BBQ Avenue lets you go for buffet full of barbecued meats. This unlimited package encompasses everything in their menu. Starting off of course, with the starters, and a welcome drink accompanied by a cold glass of water. 
+                </p>
+				<h3>The Hideout</h3>
+				<p>
+                    The Battered Shrimp Taco (Rs. 1200) was served as a portion of three soft shell tacos. Each taco featured around 4/5 fat, juicy prawns encased in a thin layer of batter along with lime coriander fresca, cilantro, cabbage, avocado, mayo and spicy mango-pineapple pickle. 
+                </p>
+				<h3>Coffee Bar</h3>
+				<p>
+                    Their menu is actually displayed at the entrance, which is quite helpful to make a decision on what to get before walking in. They serve continental breakfast, as well as a range of sandwiches and crepes, which you can pair up with juices, lassi, coffee (hot/cold) and milkshakes.  
+                </p>
+				<h3>foods</h3>
+				<p>
+                    We started off with the Ceviche (Rs. 950), an assortment of seabass, avocado, salsa verde and mango. Every element here was well-executed, fresh and delicious. With a little bit of leafy, herby touch from the salsa verde, a sweet, sour and fruity note from mango, and a tinge of creaminess from avocado; all that were bound nicely to the raw slices of seabass. If you're looking for something light to kickstart your meal like we did, this is a good choice.
+				</p>
+				<p>
+
+
+
+
+
+
+<p>Recipe for, {{ recipe.title }}!</p>
+
+<a href={{ recipe.href }}>Click here for recipe</a>
+
+<a>{{ recipe.thumbnail }}</a>
+
+<img src={{ recipe.thumbnail }}>
+
+<p></p>
+
+<a class="twitter-share-button"
+
+	href="https://twitter.com/intent/tweet?text=Hello%20world"
+
+	data-size="large">
+
+	Tweet
+
+</a>
+
+<button>Add to Favorites</button>
+
+
+
+
+<p></p>
+
+
+
+
+<h1>jQuery Example</h1>
+
+<p><input type=text size=5 name=a>
+
+   <span id=result>?</span>
+
+<p><a href=# id=calculate>Search recipe</a>
+
+
+                   
+                </p>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div>			
+			<ul>
+				<li>
+					<a href="http://freewebsitetemplates.com/go/twitter/"><img src="static/images/icons/aaa.jpg"></a>
+					<!-- <a href="http://freewebsitetemplates.com/go/twitter/" id="twitter"></a> -->
+				</li>
+				<li>
+					<a href="http://freewebsitetemplates.com/go/facebook/" id="facebook"><img src="static/1.jpg"></a>
+				</li>
+				<li>
+					<a href="http://freewebsitetemplates.com/go/googleplus/" id="googleplus"><img src="static/images/icons/ggg.jpg"></a>
+				</li>
+				<li>
+					<a href="http://pinterest.com/fwtemplates/" id="pinterest"><img src="static/images/icons/ppp.jpg"></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
